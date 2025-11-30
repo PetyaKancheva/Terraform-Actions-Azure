@@ -1,4 +1,4 @@
-name: terraform-plan.yml
+name: Terraform plan and apply
 on:
   push:
     branches:

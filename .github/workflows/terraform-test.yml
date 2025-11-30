@@ -1,5 +1,5 @@
 #Set up Job
-name: Terraform-plan
+name: Terraform-test
 on:
   push:
     branches:
