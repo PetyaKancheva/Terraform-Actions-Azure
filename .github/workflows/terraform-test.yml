@@ -1,15 +1,30 @@
 #Set up Job
+name: Terraform-plan
+on:
+  pull_request:
+    branches:
+      - main
 
-#Checkout
 
-#Setup Terraform
+jobs:
+  terraform-test:
+    -name: Terraform test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-#Terraform Init
+      #Setup Terraform
+      - name: Setup Terraform
+        run: terraform init
+        #Terraform Init
 
-#Terraform Format
+      - name: Terraform Format
+        run: terraform fmt -check -recursive
 
-#Terraform Validate
 
+        #Terraform Validate
+      - name: Terraform Validate
+        run: terraform  validate
 #Post Checkout
 
 #Complete job
