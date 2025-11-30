@@ -18,7 +18,7 @@ jobs:
         uses: hashicorp/setup-terraform@v3
 
         #Terraform Init
-      - name: Setup Terraform
+      - name: Terraform Init
         run: terraform init
 
       - name: Terraform Format
@@ -28,6 +28,3 @@ jobs:
         #Terraform Validate
       - name: Terraform Validate
         run: terraform  validate
-#Post Checkout
-
-#Complete job
