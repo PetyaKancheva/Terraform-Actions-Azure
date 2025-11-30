@@ -1,0 +1,1 @@
+Create CI/CD pipeline for test project with Terraform in Azure and GithubActions
