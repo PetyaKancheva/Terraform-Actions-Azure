@@ -21,7 +21,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
       - name: Terraform plan
-        run: terraform plan -out=tfplan
-#        Save plan to artifacts
+        run: terraform plan -auto-approve -out=tfplan
+      #        Save plan to artifacts
       - name: Terraform apply
-        run: terraform apply -auto-approve tfplan
+        run: terraform apply -auto-approve
