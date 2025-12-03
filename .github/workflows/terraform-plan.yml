@@ -49,9 +49,9 @@ jobs:
 
       - name: Terraform plan
         run: terraform plan -out=tfplan
-#  terraform-apply:
-#    runs-on: ubuntu-latest
-#    needs: [terraform-plan]
-#    steps:
-#        - name: Terraform apply
-#          run: terraform apply -auto-approve tfplan
+  terraform-apply:
+    runs-on: ubuntu-latest
+    needs: [terraform-plan]
+    steps:
+        - name: Terraform apply
+          run: terraform apply -auto-approve tfplan
