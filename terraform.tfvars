@@ -1,4 +1,3 @@
-
 resource_group_name               = "TaskBoardRG"
 resource_location_name            = "Poland Central"
 app_service_plan_name             = "TaskBoardSP"
@@ -13,7 +12,6 @@ sql_database_collation            = "SQL_Latin1_General_CP1_CI_AS"
 sql_database_license_type         = "LicenseIncluded"
 sql_database_sku                  = "S0"
 sql_database_storage_account_type = "Local"
-
 firewall_rule_name     = "FirewallRule1"
 firewall_rule_start_ip = "0.0.0.0"
 firewall_rule_end_ip   = "0.0.0.0"
